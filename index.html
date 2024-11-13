@@ -3,62 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Central de Ajuda</title>
+  <title>Document</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="navbar-brand">
-      <img src="" alt="Logo" class="logo">
-      <span>Manual de integração: API Nota Fiscal de Serviço Eletrônica</span>
-    </div>
-  </header>
+  <div class="sidebar">
+    <header>
+      <div class="menu">
+        <div class="item"><a href="#"><i class="fas fa-user"></i>Login API
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Autenticar usuário</a>
+          <a href="#" class="sub-item">Observação</a>
+          <a href="#" class="sub-item">Testes de requisição</a>
+        </div>
+        </div>
 
-  <div class="container">
-    <!-- Menu Lateral -->
-    <nav class="sidebar">
-      <h2>Central de ajuda</h2>
-      <ul>
-        <li><a href="#token">Geração do token de acesso</a></li>
-        <li><a href="#emissao">Emissão NFS-e</a></li>
-        <li><a href="#cadastro">Cadastro Tomador</a></li>
-        <li><a href="#consulta">Consultar Tomador</a></li>
-        <li><a href="#testes">Ambiente de testes</a></li>
-      </ul>
-    </nav>
-    
-    <!-- Área de Conteúdo -->
-    <main class="content">
-      <section id="token">
-        <h2>Geração do token de acesso</h2>
-        <p>1. O endpoint para obter o token será: https://nfservico.com.br/prefeiturateste_api/token (subistituir "prefeiturateste" pelo nome do município)</p>
-        <br>
-        <p>2. Exemplo de corpo da requisição [Método POST]: 
-            <br>
-            <br> grant_type=password
-            <br> &username= username@cnpj
-            <br> &password= Senha
-            <br> &client_id= NFSeApp (default)
-            <br> &client_secret=</p>
-            <br>
-        <p>3. O retorno da requisição será o token de acesso. </p>
-      </section>
-      <section id="emissao">
-        <h2>Emissão NFS-e</h2>
-        <p></p>
-      </section>
-      <section id="cadastro">
-        <h2>Cadastro Tomador</h2>
-        <p></p>
-      </section>
-      <section id="consulta">
-        <h2>Consultar Tomador</h2>
-        <p></p>
-      </section>
-    </main>
+        <div class="item"><a href="#"><i class="fas fa-file-alt"></i>Emissão NFS-e
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Formato JSON</a>
+          <a href="#" class="sub-item">Parametros necessários</a>
+          <a href="#" class="sub-item">JSON NFS-e</a>
+          <a href="#" class="sub-item">Observação</a>
+        </div>
+        </div>
+
+        <div class="item"><a href="#"><i class="fas fa-user-plus"></i>Cadastro Tomador
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Formato JSON</a>
+          <a href="#" class="sub-item">JSON Tomador</a>
+          <a href="#" class="sub-item">Observação</a>
+        </div>
+        </div>
+
+        <div class="item"><a href="#"><i class="fas fa-search"></i>Consulta Tomador
+          <i class="fas fa-angle-right dropdown"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Consulta de Tomador</a>
+        </div>
+        </div>
+      </div>
+    </header>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
