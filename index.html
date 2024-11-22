@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Ajuda</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="sidebar">
-    <header>
-      <div class="menu">
-        <div class="item"><a href="#"><i class="fas fa-user"></i>Login API
-          <i class="fas fa-angle-right dropdown"></i>
-        </a>
-        <div class="sub-menu">
-          <a href="#" class="sub-item">Autenticar usuário</a>
-          <a href="#" class="sub-item">Observação</a>
-          <a href="#" class="sub-item">Testes de requisição</a>
-        </div>
-        </div>
 
-        <div class="item"><a href="#"><i class="fas fa-file-alt"></i>Emissão NFS-e
-          <i class="fas fa-angle-right dropdown"></i>
-        </a>
-        <div class="sub-menu">
-          <a href="#" class="sub-item">Formato JSON</a>
-          <a href="#" class="sub-item">Parametros necessários</a>
-          <a href="#" class="sub-item">JSON NFS-e</a>
-          <a href="#" class="sub-item">Observação</a>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" />
         </div>
+        <div class="title">
+            <h1>Manual de Integração: API Nota Fiscal de Serviço Eletrônica</h1>
         </div>
+    </div>
 
-        <div class="item"><a href="#"><i class="fas fa-user-plus"></i>Cadastro Tomador
-          <i class="fas fa-angle-right dropdown"></i>
-        </a>
-        <div class="sub-menu">
-          <a href="#" class="sub-item">Formato JSON</a>
-          <a href="#" class="sub-item">JSON Tomador</a>
-          <a href="#" class="sub-item">Observação</a>
-        </div>
-        </div>
 
-        <div class="item"><a href="#"><i class="fas fa-search"></i>Consulta Tomador
-          <i class="fas fa-angle-right dropdown"></i>
-        </a>
-        <div class="sub-menu">
-          <a href="#" class="sub-item">Consulta de Tomador</a>
+    <!-- Barra lateral -->
+    <div class="sidebar">
+        <h2>Central de ajuda</h2>
+        <div class="dropdown">
+            <button class="dropdown-btn">Login API</button>
+            <div class="dropdown-content">
+                <a href="#">1.1 Autenticar usuário</a>
+                <a href="#">1.2 Parâmetros</a>
+                <a href="#">1.3 Ambiente de Teste</a>
+            </div>
         </div>
+        <div class="dropdown">
+            <button class="dropdown-btn">Emissão NFS-e</button>
+            <div class="dropdown-content">
+                <a href="#">2.1 Formato do JSON</a>
+                <a href="#">2.2 Parâmetros necessários</a>
+                <a href="#">2.3 JSON NFS-e</a>
+                <a href="#">2.4 Observação</a>
+            </div>
         </div>
-      </div>
-    </header>
-  </div>
-  <script src="script.js"></script>
+        <div class="dropdown">
+            <button class="dropdown-btn">Cadastro Tomador</button>
+            <div class="dropdown-content">
+                <a href="#">3.1 Formato do Post</a>
+                <a href="#">3.2 JSON Tomador</a>
+                <a href="#">3.3 Observação</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn">Consultar Tomador</button>
+            <div class="dropdown-content">
+                <a href="#">4.1 Consulta código Tomador</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
